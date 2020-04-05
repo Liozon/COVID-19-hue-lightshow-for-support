@@ -1,5 +1,7 @@
 # COVID-19 Hue lightshow for support
 
+![Lightshow running](https://github.com/Liozon/COVID-19-hue-lightshow-for-support/blob/master/Media/GIFs/Running%20show.gif?raw=true "Lightshow running")
+
 - [COVID-19 Hue lightshow for support](#covid-19-hue-lightshow-for-support)
   - [Intro](#intro)
   - [How it works](#how-it-works)
