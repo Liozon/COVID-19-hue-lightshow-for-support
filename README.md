@@ -22,7 +22,7 @@ The lightshow runs until Alexa triggers the end of it at another specific time, 
 
 ## How it works
 
-I used Alexa to trigger the lightshow. At a specific time, Alexa will alert everyone at the house that it's time to get ready to cheer all the fantastic people working against or exposed to the Coronavirus. The NodeMCU is triggered via Sinric, as it appears as a switch for Alexa. She will send an "On" signal to Sinric, that will start the timer for the show.
+I used Alexa to trigger the lightshow. At a specific time, Alexa will alert everyone at the house that it's time to get ready to cheer all the fantastic people working against or exposed to the Coronavirus. The NodeMCU is triggered via Sinric, as it appears as a switch for Alexa. Alexa will send an "On" signal to Sinric, that will start the timer for the show.
 
 The lightshow turns every lights off 30 seconds before firing, thus Alexa is still warning us about that too.
 
