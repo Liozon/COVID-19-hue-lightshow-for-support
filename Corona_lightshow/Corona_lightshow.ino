@@ -29,6 +29,7 @@ bool startLoopShow = false;
 // Adjust the timers at your convenience 
 const unsigned long delay1sec30 = 1500;
 const unsigned long delay5sec = 5000;
+const unsigned long delay8sec = 8000;
 const unsigned long delay30sec = 30000;
 const unsigned long delay2min30 = 150000;
 unsigned long previousTimer = 0;
@@ -80,7 +81,7 @@ void turnAllLightsOff() {
   http.begin("http://IP_OF_YOUR_HUE_BRIDGE/api/YOUR_API_TOKEN/groups/YOUR_GROUP_NUMBER/action");
   http.addHeader("Content-Type", "application/json");
   char jsonPayload[1000];
-  sprintf(jsonPayload, "{\"on\":false}");
+  sprintf(jsonPayload, "{\"on\":false,\"transitiontime\":25}");
   int httpCode = http.PUT(jsonPayload);
   //  String payload = http.getString();
   //  Serial.println(httpCode);
@@ -302,7 +303,7 @@ void loop() {
     thirdTimer = false;
     fourthTimer = false;
     currentTime = millis();
-    if ((unsigned long)(currentTime - previousTimer5) >= delay5sec) {
+    if ((unsigned long)(currentTime - previousTimer5) >= delay8sec) {
       Serial.println("fifth timer");
       turnAllLightsOnEnd();
       fifthTimer = false;
