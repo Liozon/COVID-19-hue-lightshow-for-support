@@ -303,7 +303,7 @@ void loop() {
     thirdTimer = false;
     fourthTimer = false;
     currentTime = millis();
-    if ((unsigned long)(currentTime - previousTimer5) >= delay5sec) {
+    if ((unsigned long)(currentTime - previousTimer5) >= delay8sec) {
       Serial.println("fifth timer");
       turnAllLightsOnEnd();
       fifthTimer = false;
